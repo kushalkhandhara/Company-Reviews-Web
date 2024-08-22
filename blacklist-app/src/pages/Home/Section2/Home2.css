@@ -1,0 +1,46 @@
+.home2{
+    margin-top: 124px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 30px;
+    font-family: "Fraunces", serif;
+}
+.home2 .home2-main{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 45px;
+}
+.home2 .home2-main .home2-side1{
+    width: 530px;
+}
+.home2 .home2-main .home2-side2{
+    width: 600px;
+}
+.home2 .home2-main .home2-side1 .home2-side1-header h2{
+    font-weight: bold;
+}
+.home2 .home2-main .home2-side2 .home2-side2-counter{
+    display: flex;
+    gap:35px;
+    margin-top: 25px;
+}
+.home2 .home2-main .home2-side2 .home2-side2-counter .home2-count h3{
+    font-weight: bold;
+}
+@media (max-width: 900px) {
+    .home2 .home2-main{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .home2 .home2-main .home2-side1{
+        width: 100%;
+    }
+    .home2 .home2-main .home2-side2{
+        width: 100%;
+    }
+
+
+}

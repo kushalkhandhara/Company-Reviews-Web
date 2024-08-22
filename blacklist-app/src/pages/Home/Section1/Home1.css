@@ -1,0 +1,142 @@
+
+.home1{
+    width: 100%;
+    margin-top: 40px;
+}
+.home1 .home1-main{
+    display: flex;
+    padding: 24px;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.home1 .home1-side1{
+    width: 560px;
+}
+.home1 .home1-side1 .home1-header{
+    font-family: "Fraunces", serif;
+}
+.home1 .home1-side1 .home1-header h1{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.0;
+}
+.home1 .home1-side1 .home1-para {
+    margin-top: 34px;
+}
+.home1 .home1-side1 .home1-para p{
+    font-size: 18px;
+    font-family: "Fraunces", serif;
+    color: rgb(107, 107, 107);
+}
+.home1 .home1-side1 .home1-button button{
+    padding: 18px;
+    outline: none;
+    border: none;
+    border-radius:24px;
+    font-weight: bold;
+    background-color: rgb(57, 155, 57);
+    color: white;
+    font-family: "Fraunces", serif;
+}
+.home1 .home1-main .home1-side2{
+    width: 610px;
+}
+.home1 .home1-main .home1-side2 .img-main{
+    display: flex;
+    gap: 12px;
+    position: relative;
+}
+.home1 .home1-main .home1-side2 .img-main .img-recommend{
+    position: absolute;
+    width: 250px;
+    background-color: rgb(57, 155, 57);
+    padding: 35px;
+    color: white;
+    border-radius: 20px;
+    bottom:-20%;
+    right: 34%;
+}
+.home1 .home1-main .home1-side2 .img-main .img-recommend q{
+    font-weight: 500;
+    font-family: "Fraunces", serif;
+}
+.home1 .home1-main .home1-side2 .img-main .img-service{
+    position: absolute;
+    width: 134px;
+    background-color: white;
+    padding: 28px 28px;
+    font-family: "Fraunces", serif;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    right: 45%;
+    bottom: 60%;
+}
+.home1 .home1-main .home1-side2 .img-main .img-service h3{
+    text-align: center;
+    font-weight: bold;
+}
+.home1 .home1-main .home1-side2 .img-main .img-service h6{
+    text-align: center;
+}
+
+.home1 .home1-main .home1-side2 .img-main .img-side1{
+    width: 400px;
+    align-self: end;
+}
+.home1 .home1-main .home1-side2 .img-main .img-side2{
+    width: 500px;
+}
+.home1 .home1-main .home1-side2 .img-main .img-side1 img{
+
+    border-radius: 20px;
+    height: 330px;
+    width: 100%;
+    object-fit: cover;
+}
+.home1 .home1-main .home1-side2 .img-main .img-side2 img{
+    border-radius: 20px;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:900px) {
+
+    .home1 .home1-main{
+        flex-direction: column;
+        gap: 25px;
+        padding: 10px;
+    }
+    .home1 .home1-side1{
+        width: 100%;
+    }
+    .home1 .home1-side1 .home1-header h1{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .home1 .home1-side1 .home1-para {
+        margin-top: 24px;
+    }
+    .home1 .home1-side1 .home1-para p{
+        font-size: 16px;
+    }
+    .home1 .home1-main .home1-side2{
+        width: 100%;
+    }
+    .home1 .home1-main .home1-side2 .img-main .img-side1 img{
+
+        /* border-radius: 20px; */
+        height: 290px;
+        /* width: 100%; */
+        /* object-fit: cover; */
+    }
+    .home1 .home1-main .home1-side2 .img-main .img-side2 img{
+        border-radius: 20px;
+        height: 400px;
+        /* width: 100%; */
+        /* object-fit: cover; */
+    }
+    
+    
+}
