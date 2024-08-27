@@ -10,6 +10,7 @@ import AddReview from "./pages/Add_Review/AddReview"
 import ViewReview from "./pages/View_Review/ViewReview"
 import Network from "./pages/Network/Network"
 import Profile from "./pages/Profile/Profile"
+// import Footer from "./components/Footer/Footer"
 
 
 function App() {
@@ -17,18 +18,19 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/blacklist" element={<Blacklist/>} />
-        <Route path="/login" element={<Login/>} /> 
-        <Route path="/signup" element={<SignUp/>} /> 
-        <Route path="/addReview" element={<AddReview/>} />  
-        <Route path="/viewReviews" element={<ViewReview/>} />  
-        <Route path="/network" element={<Network/>} />  
-        <Route path="/profile" element={<Profile/>} />  
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/blacklist" element={<Blacklist/>} />
+          <Route path="/login" element={<Login/>} /> 
+          <Route path="/signup" element={<SignUp/>} /> 
+          <Route path="/addReview" element={<AddReview/>} />  
+          <Route path="/viewReviews" element={<ViewReview/>} />  
+          <Route path="/network" element={<Network/>} />  
+          <Route path="/profile" element={<Profile/>} />  
+        </Routes>
+      {/* <Footer/> */}
     </>
   )
 }

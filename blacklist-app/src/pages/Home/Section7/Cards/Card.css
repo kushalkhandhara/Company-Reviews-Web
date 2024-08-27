@@ -1,0 +1,53 @@
+.home7-card{
+    width: 430px;
+    background-color: #252525;
+    color: white;
+    font-family: "Francaus";
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+.home7-card-header h3{
+    font-weight: bold;
+    font-size: 24px;
+}
+.home7-card-header p{
+    color : #656565;
+    font-size: 16px;
+    margin-bottom: 6px;    
+}
+.home7-card .home7-card-icon{
+    position: absolute;
+    top: 0%;
+    right: 8%;
+    font-size: 40px;
+}
+
+@media (max-width: 900px){
+    .home7-card{
+        width: 90%;
+        /* background-color: #252525; */
+        /* color: white; */
+        /* font-family: "Francaus"; */
+        /* padding: 20px; */
+        /* border-radius: 8px; */
+        /* position: relative; */
+    }
+    .home7-card .home7-card-icon{
+        /* position: absolute; */
+        /* top: 0%; */
+        /* right: 8%; */
+        font-size: 36px;
+    }
+    .home7-card-header h3{
+        /* font-weight: bold; */
+        font-size: 21px;
+    }
+    .home7-card-header p{
+        color : #656565;
+        font-size: 14px;
+        margin-bottom: 6px;    
+    }
+
+
+}

@@ -1,0 +1,26 @@
+.addreview3-service{
+    width: 90%;
+    margin-bottom: 30px;
+}
+.addreview3-service .addreview3-numb{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #162D3C;
+    border-radius: 60%;
+    color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addreview3-service .addreview3-service-header{
+    margin-top: 15px;
+}
+.addreview3-service .addreview3-service-header h5{
+    font-size: 18px;
+    color: #12141D;
+}
+.addreview3-service .addreview3-service-header p{
+    color: #12141db2;
+    font-size: 16px;
+}

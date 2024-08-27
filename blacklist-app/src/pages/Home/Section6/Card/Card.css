@@ -1,0 +1,18 @@
+.home6-card{
+    padding:15px;
+    background-color: white;
+    width: 330px;
+    height: 165px;
+    border-radius: 8px;
+}
+.home6-card .home6-card-icon{
+    font-size: 25px;
+    color: green;
+}
+.home6-card .home6-card-header{
+    margin-top: 15px;
+}
+.home6-card .home6-card-header p{
+    font-size: 13px;
+    color: grey;
+}

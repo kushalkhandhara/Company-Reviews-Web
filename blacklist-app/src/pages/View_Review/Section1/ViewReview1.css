@@ -1,0 +1,73 @@
+.viewreview1{
+    width: 100%;
+    overflow: hidden;
+}
+.viewreview1 .viewreview1-main{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding: 30px;
+    justify-content: center;
+}
+.viewreview1 .viewreview1-main .viewreview-side1{
+    width: 560px;
+}
+.viewreview1 .viewreview1-main .viewreview-side1 .reviews-data .review1{
+    padding: 20px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.viewreview1 .viewreview1-main .viewreview-side1 .viewreview-side1-header h2{
+    font-weight: bold;
+    font-size: 44px;
+}
+.viewreview1 .viewreview1-main .viewreview-side1 .searchinp {
+    position: relative;
+}
+.viewreview1 .viewreview1-main .viewreview-side1 .searchinp input{
+    width: 90%;
+    height: 45px;
+    padding-left: 50px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gray;
+}
+.viewreview1 .viewreview1-main .viewreview-side1 .searchinp svg{
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    color: gray;
+}
+.viewreview1 .viewreview1-main .viewreview-side1 .viewreview-side1-header p{
+    color: rgb(56, 56, 56);
+    margin-top: 20px;
+}
+.viewreview1 .viewreview1-main .viewreview-side2{
+    width: 450px;
+}
+.viewreview1 .viewreview1-main .viewreview-side2 img{
+    width: 400px;
+    height: 550px;
+    border-radius: 12px;
+}
+
+@media (max-width:900px){
+    .viewreview1 .viewreview1-main{
+        flex-direction: column;
+        padding: 20px;
+        gap: 60px;
+    }
+    .viewreview1 .viewreview1-main .viewreview-side1{
+        width: 100%;
+    }
+    .viewreview1 .viewreview1-main .viewreview-side1 .viewreview-side1-header h2{
+        /* font-weight: bold; */
+        font-size: 34px;
+    }
+    .viewreview1 .viewreview1-main .viewreview-side2{
+        width: 100%;
+    }
+
+
+}

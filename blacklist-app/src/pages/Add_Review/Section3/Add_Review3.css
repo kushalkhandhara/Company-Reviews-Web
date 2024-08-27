@@ -1,0 +1,43 @@
+.addreview3{
+    width:100%;
+    overflow: hidden;
+    background-color: #EEEFE7;
+    padding-top: 66px;
+}
+.addreview3 .addreview3-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    padding-bottom: 30px;
+    gap: 60px;
+} 
+.addreview3 .addreview3-header{
+    margin-bottom:30px;
+}
+.addreview3 .addreview3-header h2{
+    text-align: center;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.addreview3 .addreview3-main .addreview3-side2-img{
+    padding: 20px;
+    width : 400px;
+}
+.addreview3 .addreview3-main .addreview3-side2-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+@media (max-width:900px){
+    .addreview3 .addreview3-main{
+        flex-direction: column;
+        gap: 20px;
+    } 
+    .addreview3 .addreview3-main .addreview3-side2-img{
+        padding: 5px;
+        width : 95%;
+    }
+
+}

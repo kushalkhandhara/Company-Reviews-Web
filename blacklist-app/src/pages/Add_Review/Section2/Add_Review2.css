@@ -1,0 +1,75 @@
+.addreview2{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 106px;
+    margin-bottom: 76px;
+}
+.addreview2 .addreview2-header{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+.addreview2 .addreview2-note{
+    width: 480px;
+    background-color: rgb(189, 189, 189);
+    padding:20px ;
+    border-radius: 12px;
+    margin:auto;
+}
+.addreview2 .review-form  .react-form-wizard .wizard-tab-content{
+    text-align: left;
+}
+.addreview2 .review-form  .react-form-wizard .wizard-tab-content .form-side{
+    margin-bottom: 30px;
+    display: flex;
+    gap: 40px;
+}
+.addreview2 .review-form  .react-form-wizard .wizard-tab-content .form-side .form-data{
+    flex: 1;
+}
+.addreview2 .review-form  .react-form-wizard .wizard-tab-content .form-side .form-data .form-label{
+    padding-left: 10px;
+    text-transform: capitalize;
+
+}
+.addreview2 .review-form  .react-form-wizard .wizard-tab-content .form-side .form-data input{
+    width: 90%;
+    border: 1px solid green;
+    outline: none;
+    height: 50px;
+    border-radius: 14px;
+    padding-left: 15px;
+}
+.addreview2 .review-form  .react-form-wizard .wizard-tab-content .form-side .form-data select{
+    width: 90%;
+    border: 1px solid green;
+    outline: none;
+    height: 50px;
+    border-radius: 14px;
+    padding-left: 15px;
+}
+.addreview2 .review-form  .react-form-wizard .wizard-tab-content .form-side .form-data textarea{
+    width: 90%;
+    border: 1px solid green;
+    outline: none;
+    height: 130px;
+    border-radius: 14px;
+    padding-top: 15px;
+    padding-left: 15px;
+    resize: none;
+}
+@media (max-width: 900px) {
+    .addreview2 .review-form  .react-form-wizard .wizard-tab-content .form-side{
+        margin-bottom: 10px;
+        /* display: flex; */
+        gap: 10px;
+        flex-direction: column;
+    }
+    .addreview2 .addreview2-note{
+        width: 100%;
+        /* background-color: rgb(189, 189, 189); */
+        /* padding:20px ; */
+        /* border-radius: 12px; */
+        /* margin:auto; */
+    }
+}

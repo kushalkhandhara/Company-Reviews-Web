@@ -1,0 +1,66 @@
+.addreview{
+    width: 100%;
+    overflow: hidden;
+    font-family: "Fraunces", serif;
+
+}
+.addreview .addreview1-main{
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    padding: 20px;
+    height: 600px;
+    
+}
+.addreview .addreview1-main .addreview1{
+    width: 400px;
+    flex: 1;
+}
+.addreview .addreview1-main .addreview1 .addreview1-header button{
+    padding: 8px 10px;
+    background-color: green;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.addreview .addreview1-main .addreview1 .addreview1-header h2{
+    font-size: 44px;
+    font-weight: bold;
+}
+.addreview .addreview1-main .addreview1 .addreview1-header p{
+    color: rgb(94, 94, 94);
+    font-style: 16px;
+    margin-top: 20px;
+}
+.addreview .addreview1-main .addreview2{
+    width: 400px;
+    flex: 1;
+}
+.addreview .addreview1-main .addreview2 img{
+    width: 100%;
+    overflow: hidden;
+}
+@media (max-width:900px){
+    .addreview .addreview1-main{
+        flex-direction: column;
+        height: 100%;
+ 
+    }
+    .addreview .addreview1-main .addreview1{
+        width: 100%;
+    
+    }
+    .addreview .addreview1-main .addreview2{
+        width: 100%;
+        
+    }
+    .addreview .addreview1-main .addreview1 .addreview1-header h2{
+        font-size: 34px;
+        /* font-weight: bold; */
+    }
+
+
+}

@@ -1,0 +1,26 @@
+.home7{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    padding-top: 76px;
+    font-family: "Francaus",serif;
+}
+.home7 .home7-header{
+    text-align: center;
+}
+.home7 .home7-header h3{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.home7 .home7-header p{
+    color: green;
+}
+.home7 .home7-cards{
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center;    /* Center the items horizontally */
+    justify-content: center; /* Center the items vertically */ 
+    gap: 20px;  
+    padding-bottom: 46px;
+}
