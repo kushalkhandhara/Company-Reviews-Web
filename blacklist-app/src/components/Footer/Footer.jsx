@@ -27,15 +27,14 @@ export default function Footer() {
 
             <div className="footer2">
                 <div className="footer2-links">
-                    <Link>Home</Link>
-                    <Link>About</Link>
-                    <Link>Add Reviews</Link>
-                    <Link>View Reviews</Link>
-                    <Link>Contact</Link>
-                    <Link>Network</Link>
-                    <Link>BlackList</Link>
-                    <Link>Create Account</Link>
-                    <Link>Login</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/addReview">Add Reviews</Link>
+                    <Link to="/viewReviews">View Reviews</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/network">Network</Link>
+                    <Link to="/signup">Create Account</Link>
+                    <Link to="/login">Login</Link>
                 </div>
             </div>
         </div>

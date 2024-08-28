@@ -18,7 +18,7 @@ export default function Navbar1() {
 
   return (
     <>
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top">
             <Container fluid>
             <Navbar.Brand as={Link} to="/">
                 <img src={logo} className="img-fluid" alt="Error" />
@@ -30,7 +30,7 @@ export default function Navbar1() {
                     <Nav.Link  as={Link} to="/">Home</Nav.Link>
                     <Nav.Link  as={Link} to="/addReview">Add Review</Nav.Link>
                     <Nav.Link  as={Link} to="/viewReviews">View Reviews</Nav.Link>
-                    <Nav.Link as={Link} to="/blacklist">Blacklist</Nav.Link>
+                    {/* <Nav.Link as={Link} to="/blacklist">Blacklist</Nav.Link> */}
                     <Nav.Link as={Link} to="/network">Network</Nav.Link>
                     <Nav.Link as={Link} to="/about">About</Nav.Link>
                     <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
