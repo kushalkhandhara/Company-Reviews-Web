@@ -2,18 +2,20 @@ import { useState } from "react";
 import "./Add_Review2.css";
 import FormWizard from "react-form-wizard-component";
 import "react-form-wizard-component/dist/style.css";
+import axios from "axios";
 
 export default function Add_Review2() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    compname: "",
-    compweb: "",
+    company_name: "",
+    company_website: "",
+    offer_letter : "",
     bond: "",
-    stayDuration: "",
-    workProfile: "",
+    stay: "",
     rating: "",
-    workExperience: "",
+    workMsg: "",
+    workprofile: ""
   });
 
   const handleInputChange = (e) => {
@@ -24,9 +26,28 @@ export default function Add_Review2() {
     }));
   };
 
-  const handleComplete = () => {
+  const handleComplete = async() => {
     console.log("Form completed!", formData);
     // Handle form completion logic here
+    try {
+      const response = await axios.post("http://localhost:8804/api/msgReview/msgReviewForm",formData);
+      console.log(response.data);
+      setFormData({
+        name: "",
+        email: "",
+        company_name: "",
+        company_website: "",
+        offer_letter : "",
+        bond: "",
+        stay: "",
+        rating: "",
+        workMsg: "",
+        workprofile: ""
+      })
+    }
+    catch (err) {
+      console.log(err.message);
+    }
   };
 
   return (
@@ -105,7 +126,7 @@ export default function Add_Review2() {
                       autoComplete="off"
                       type="text"
                       id="compname"
-                      name="compname"
+                      name="company_name"
                       placeholder="Enter Your Company Name"
                       value={formData.compname}
                       onChange={handleInputChange}
@@ -124,7 +145,7 @@ export default function Add_Review2() {
                       autoComplete="off"
                       type="text"
                       id="compweb"
-                      name="compweb"
+                      name="company_website"
                       placeholder="Enter Your Company Website"
                       value={formData.compweb}
                       onChange={handleInputChange}
@@ -156,6 +177,21 @@ export default function Add_Review2() {
                   </div>
                 </div>
               </div>
+
+              <div className="form-side">
+                <div className="form-data">
+                  <div className="form-label">
+                    <label htmlFor="offerLetter">
+                    Please Attach Your Offer Letter For Verification (No Need to Worry We are not gonna send to anyone)<span style={{ color: "red" }}>*</span>
+                    </label>
+                  </div>
+                  <div className="form-inp">
+                    <input type="file" className="p-2" name="offer_letter" autoComplete="off" id="offerLetter" value={formData.offer_letter} onChange={handleInputChange}  placeholder="Please Attach Your Offer Letter" />
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </FormWizard.TabContent>
 
@@ -174,7 +210,7 @@ export default function Add_Review2() {
                       autoComplete="off"
                       type="text"
                       id="stayDuration"
-                      name="stayDuration"
+                      name="stay"
                       placeholder="Enter Your Time"
                       value={formData.stayDuration}
                       onChange={handleInputChange}
@@ -190,9 +226,9 @@ export default function Add_Review2() {
                   </div>
                   <div className="form-inp">
                     <select
-                      name="workProfile"
+                      name="workprofile"
                       id="workProfile"
-                      value={formData.workProfile}
+                      value={formData.workprofile}
                       onChange={handleInputChange}
                     >
                       <option value="" disabled >
@@ -255,9 +291,9 @@ export default function Add_Review2() {
                       cols="10"
                       autoComplete="off"
                       id="workExperience"
-                      name="workExperience"
+                      name="workMsg"
                       placeholder="Enter Your Work Experience"
-                      value={formData.workExperience}
+                      value={formData.workMsg}
                       onChange={handleInputChange}
                     />
                   </div>
@@ -271,13 +307,13 @@ export default function Add_Review2() {
               <h3>Review Your Data</h3>
               <p><b>Name:</b> {formData.name}</p>
               <p><b>Email:</b> {formData.email}</p>
-              <p><b>Company Name:</b> {formData.compname}</p>
-              <p><b>Company Website:</b> {formData.compweb}</p>
+              <p><b>Company Name:</b> {formData.company_name}</p>
+              <p><b>Company Website:</b> {formData.company_website}</p>
               <p><b>Bond:</b> {formData.bond}</p>
-              <p><b>Stay Duration:</b> {formData.stayDuration}</p>
-              <p><b>Work Profile:</b> {formData.workProfile}</p>
+              <p><b>Stay Duration:</b> {formData.stay}</p>
+              <p><b>Work Profile:</b> {formData.workprofile}</p>
               <p><b>Rating:</b> {formData.rating} Stars</p>
-              <p><b>Work Experience:</b> {formData.workExperience}</p>
+              <p><b>Work Experience:</b> {formData.workMsg}</p>
             </div>
           </FormWizard.TabContent>
         </FormWizard>

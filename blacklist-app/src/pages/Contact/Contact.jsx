@@ -2,16 +2,45 @@ import "./Contact.css";
 import { FaMailBulk } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { useState } from "react";
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-}
+import axios from "axios";
+
 
 export default function Contact() {
+
+  // Setting Inputs data
+  const [inputs, setInputs] = useState({});
+  
+  // handle Change Function
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs(values=>({...values,[name] : value}))
+  }
+
+  // Handle Submit Form
+  const handleSubmit = async(e)=>{
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8804/api/msgContact/msgContactForm",inputs);
+      console.log(response.data);
+      setInputs({
+        name : "",
+        email : "",
+        message : "" 
+      })
+    }catch(error){
+      console.log(error.message);
+    }
+  }
+
+
+
   return (
     <div className="contact">
       <div className="contact-main">
-        
+
         <div className="contact-side1">
           <p>
             We&apos;re Here to Help 
@@ -39,7 +68,7 @@ export default function Contact() {
         <div className="contact-side2">
 
           <div className="contact-form">
-            <form action="" onSubmit={handleSubmit}>
+            <form autoComplete="off" onSubmit={handleSubmit} method="POST">
 
             <div className="form-data mt-3">
               <div className="form-labe ps-2 mb-1">
@@ -48,7 +77,7 @@ export default function Contact() {
                 </label>
               </div>
               <div className="form-inp">
-                <input type="text" name="contactName" id="contactName" placeholder="Enter Your Name" />
+                <input type="text" name="name" id="contactName" value={inputs.name || ""} onChange={handleChange} placeholder="Enter Your Name" />
               </div>
             </div>
             <div className="form-data mt-3">
@@ -58,7 +87,7 @@ export default function Contact() {
                 </label>
               </div>
               <div className="form-inp">
-                <input type="email" name="contactEmail" id="contactEmail" placeholder="Enter Your Email" />
+                <input type="email" name="email" id="contactEmail" value={inputs.email || ""} onChange={handleChange} placeholder="Enter Your Email" />
               </div>
             </div>
 
@@ -69,7 +98,7 @@ export default function Contact() {
                 </label>
               </div>
               <div className="form-inp">
-                <textarea  cols="20" rows="10" name="message"  placeholder="Enter Your Name" />
+                <textarea  cols="20" rows="10" name="message" value={inputs.message || ""} onChange={handleChange} placeholder="Enter Your Name" />
               </div>
             </div>
 
